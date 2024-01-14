@@ -52,8 +52,7 @@ module.exports = {
             title: "Continuous Integrations",
           },
           chore: {
-            description:
-              "補助ツールの導入やドキュメント生成などソースやテストの変更を含まない変更",
+            description: "ソースやテストの変更を含まない変更",
             title: "Chores",
           },
           revert: {
