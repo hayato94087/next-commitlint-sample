@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "commit": "git-cz",
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,jsx,cjs,mjs,md,json,lintstagedrc}\"",
     "lint": "next lint",
     "lint:fix": "eslint \"./src/**/*.{ts,tsx,js,jsx}\" --fix",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
+    "@commitlint/cz-commitlint": "^18.4.4",
     "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/eslint": "^8.56.2",
@@ -28,6 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^6.18.1",
     "@typescript-eslint/parser": "^6.18.1",
     "autoprefixer": "^10.0.1",
+    "commitizen": "^4.3.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "14.0.4",
     "husky": "^8.0.0",
@@ -37,5 +40,10 @@
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.3.0",
     "typescript": "^5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }
